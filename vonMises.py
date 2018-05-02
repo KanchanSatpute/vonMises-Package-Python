@@ -136,11 +136,11 @@ def qvonmises(p, mu = 0 ,  kappa = None, from_ = None, tol = np.finfo(float).eps
     elif (np.any(p < 0)):
         raise ValueError("p must be in [0,1]")
 
-    if (pd.isnull(from_)): ##from is a keyword
+    if (pd.isnull(from_)):
         from_ = mu - np.pi
    
     n = p.size
-    mu = (mu - from_)%(2 * np.pi)      ## from is a keyword    
+    mu = (mu - from_)%(2 * np.pi)        
     if (pd.isnull(kappa)): 
         raise ValueError("kappa must be provided")   
         
