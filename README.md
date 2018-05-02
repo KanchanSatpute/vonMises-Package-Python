@@ -4,12 +4,12 @@ Vedant Mehta, Kanchan Satpute
 
 *Texas A&M University, College Station, Texas*
 
-> <div style="text-align: justify">**Abstract:** This article tries to bridge the gap between the quality
-> of package available for R and Python for circular statistics and von
-> Mises distribution in specific. There is a function available in
-> Python to generate random deviates from vonMises distribution. But
-> there are no functions available to calculate the probability density,
-> cumulative distribution, quantiles, etc.</div>
+<div style="text-align: justify">**Abstract:** This article tries to bridge the gap between the quality
+of package available for R and Python for circular statistics and von
+Mises distribution in specific. There is a function available in
+Python to generate random deviates from vonMises distribution. But
+there are no functions available to calculate the probability density,
+cumulative distribution, quantiles, etc.</div>
 
 1. Introduction
 ===============
