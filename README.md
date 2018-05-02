@@ -1,20 +1,19 @@
-**Von Mises Distribution Implementation in Python**
+# **Von Mises Distribution Implementation in Python**
 
 Vedant Mehta, Kanchan Satpute
 
 *Texas A&M University, College Station, Texas*
 
-<div style="text-align: justify">**Abstract:** This article tries to bridge the gap between the quality
-of package available for R and Python for circular statistics and von
-Mises distribution in specific. There is a function available in
-Python to generate random deviates from vonMises distribution. But
-there are no functions available to calculate the probability density,
-cumulative distribution, quantiles, etc.</div>
+> **Abstract:** This article tries to bridge the gap between the quality
+> of package available for R and Python for circular statistics and von
+> Mises distribution in specific. There is a function available in
+> Python to generate random deviates from vonMises distribution. But
+> there are no functions available to calculate the probability density,
+> cumulative distribution, quantiles, etc.
 
-1. Introduction
-===============
+## 1. Introduction
 
-<div style="text-align: justify">Directional statistics or circular statistics is a sub-discipline of
+Directional statistics or circular statistics is a sub-discipline of
 statistics that deals with directions, axes and rotation. Think of it as
 a regular linear data converted into a circular data by giving it
 attributes like rotation, angle, etc. Circular statistics is a lot
@@ -25,7 +24,7 @@ kind of data changes completely. The kind of data that has angles, or
 periodicity, or does not have a true zero can be labeled as directional
 data. Some of the examples include temporal periods (e.g. time of day,
 month, hour, week, etc.), compass directions, daily wind directions,
-ocean currents, etc.<sup>[5\]</sup></div>
+ocean currents, etc.<sup>[5\]</sup>
 
 Calculation of mean, median and variance of a circular data is quite
 different from that in linear statistics. If given a data of angles, it
