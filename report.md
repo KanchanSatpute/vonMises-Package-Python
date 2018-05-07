@@ -12,7 +12,6 @@ Vedant Mehta, Kanchan Satpute
 > cumulative distribution, quantiles, etc.
 
 1. Introduction
-===============
 
 Directional statistics or circular statistics is a sub-discipline of
 statistics that deals with directions, axes and rotation. Think of it as
@@ -34,7 +33,7 @@ cannot be simply averaged like it is done in linear statistics.
 Method for mean calculation:
 
 **Example:** Given angular data
-$(\alpha_{1},\ \alpha_{2},\ldots.,\alpha_{n})$. Calculate the sine and
+$$(\alpha_{1},\ \alpha_{2},\ldots.,\alpha_{n})$$. Calculate the sine and
 cosine of all the angles.
 
 Further, $X = \ \frac{\sum_{i = 1}^{n}{\cos\alpha_{i}}}{N}$ and
