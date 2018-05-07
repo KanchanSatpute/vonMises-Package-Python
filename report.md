@@ -25,7 +25,7 @@ kind of data changes completely. The kind of data that has angles, or
 periodicity, or does not have a true zero can be labeled as directional
 data. Some of the examples include temporal periods (e.g. time of day,
 month, hour, week, etc.), compass directions, daily wind directions,
-ocean currents, etc.^\[5\]^
+ocean currents, etc.<sup>\[5\]
 
 Calculation of mean, median and variance of a circular data is quite
 different from that in linear statistics. If given a data of angles, it
@@ -89,8 +89,8 @@ where, $I_{o}(\kappa)$ – Modified Bessel function of zero^th^ order.
 
 $\mu$ – measure of location (similar to mean in Normal distribution)
 
-> $\kappa$ – measure of concentration ( $1/\kappa$ is analogous to
-> $\sigma^{2}$ )
+$\kappa$ – measure of concentration ( $1/\kappa$ is analogous to
+$\sigma^{2}$ )
 
 $I_{o}(\kappa)$ is defined as:
 
@@ -128,18 +128,16 @@ reference for generating the algorithms for each method.
 Description – A method for generating random numbers for a von Mises
 circular distribution.
 
-Arguments –
+Arguments:
 
 n – number of observations
-
-Examples -
 
 **dvonmises(x, mu, kappa) **
 
 Description – A method for calculating the probability density at the
 given points for a von Mises circular distribution.
 
-Arguments –
+Arguments:
 
 x – A vector containing the points at which the density is to be
 calculated. The object is from class ‘circular’
@@ -147,14 +145,12 @@ calculated. The object is from class ‘circular’
 log – logical; if True, probabilities p is given as log(p). The default
 value for log is given as False.
 
-Examples –
-
 **pvonmises(q, mu, kappa)**
 
 Description – Method used to calculate the cumulative distribution at
 the given points for a von Mises distribution.
 
-Arguments –
+Arguments:
 
 q – A vector containing the points at which the distribution is to be
 calculated. The object is from class ‘circular’
@@ -162,14 +158,12 @@ calculated. The object is from class ‘circular’
 tol – the precision in evaluating the distribution function. Default
 value = 1e-20
 
-Examples –
-
 **qvonmises(p, mu, kappa)**
 
 Description – A method used to calculate the quantiles for the given
 probabilities for a von Mises distribution.
 
-Arguments –
+Arguments:
 
 p – A vector containing the probabilities at points at which the
 quantiles are to be calculated. The object is from class ‘circular’
@@ -179,7 +173,6 @@ None
 
 tol – machine epsilon value raised to 0.6
 
-Examples –
 
 Common arguments for all the methods:
 
@@ -196,21 +189,14 @@ of parameters mu and kappa. Below shown is the table that shows the
 comparison of the values obtained in R and values obtained by the
 package we built in Python.
 
-  -----------------------------------------------------------------------------------------------
-  Method                          R                               Python
-  ------------------------------- ------------------------------- -------------------------------
-  pvonmises(2, 1, 6)              \[0.9888944\]                   \[0.988894\]
-                                                                  
-  pvonmises(\[2, 0.8\], 2, 6)     \[0.5 , 0.003595458\]           \[0.5 , 0.00359546\]
-
-  dvonmises(0.5, 1, 6)            \[0.4581463\]                   \[0.45814625\]
-                                                                  
-  dvonmises(\[1, 3\], 3, 6)       \[1.949157e-04, 9.54982e-01\]   \[1.949157e-04, 9.54982e-01\]
-
-  qvonmises(0.5, 1, 6)            \[1\]                           \[1\]
-                                                                  
-  qvonmises(\[0.2, 0.6\], 2, 7)   \[1.67413597, 2.09767203\]      \[1.67413597, 2.09767203\]
-  -----------------------------------------------------------------------------------------------
+  |Method                         | R                             | Python                        |
+  |-------------------------------|-------------------------------|-------------------------------|
+  |pvonmises(2, 1, 6)             |\[0.9888944\]                  | \[0.988894\]                  |             
+  |pvonmises(\[2, 0.8\], 2, 6)    |\[0.5 , 0.003595458\]          | \[0.5 , 0.00359546\]          |
+  |dvonmises(0.5, 1, 6)           |\[0.4581463\]                  | \[0.45814625\]                |
+  |dvonmises(\[1, 3\], 3, 6)      |\[1.949157e-04, 9.54982e-01\]  | \[1.949157e-04, 9.54982e-01\] |
+  |qvonmises(0.5, 1, 6)           |\[1\]                          | \[1\]                         |
+  |qvonmises(\[0.2, 0.6\], 2, 7)  |\[1.67413597, 2.09767203\]     | \[1.67413597, 2.09767203\]    |
 
 Now, we will plot some graphs to demonstrate how precise our values are
 when compared to those in R
