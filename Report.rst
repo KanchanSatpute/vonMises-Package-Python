@@ -35,7 +35,7 @@ cannot be simply averaged like it is done in linear statistics.
 Method for mean calculation:
 
 **Example:** Given angular data
-:math:`\\alpha_{1},\\alpha_{2},\\ldots.,\\alpha_{n})`. Calculate the sine
+math:`\\alpha_{1},\\alpha_{2},\\ldots.,\\alpha_{n})`. Calculate the sine
 and cosine of all the angles.
 
 Further, :math:`X = \\frac{\\sum_{i = 1}^{n}{\\cos\\alpha_{i}}}{N}` and
