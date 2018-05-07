@@ -35,16 +35,16 @@ cannot be simply averaged like it is done in linear statistics.
 Method for mean calculation:
 
 **Example:** Given angular data
-:math:`\alpha_{1},\alpha_{2},\ldots.,\alpha_{n})`. Calculate the sine
+:math:`\\alpha_{1},\\alpha_{2},\\ldots.,\\alpha_{n})`. Calculate the sine
 and cosine of all the angles.
 
-Further, :math:`X = \\frac{\sum_{i = 1}^{n}{\cos\alpha_{i}}}{N}` and
-:math:`Y = \frac{\sum_{i = 1}^{n}{\sin\alpha_{i}}}{N}`. Also,
-:math:`\overset{\overline{}}{r} = \sqrt{X^{2} + Y^{2}}`. So, mean cosine
+Further, :math:`X = \\frac{\\sum_{i = 1}^{n}{\\cos\\alpha_{i}}}{N}` and
+:math:`Y = \\frac{\\sum_{i = 1}^{n}{\\sin\\alpha_{i}}}{N}`. Also,
+:math:`\\overset{\\overline{}}{r} = \\sqrt{X^{2} + Y^{2}}`. So, mean cosine
 will be
 
-:math:`\cos\overset{\overline{}}{\alpha} = \frac{X}{r}` and mean sine
-will be :math:`\sin\overset{\overline{}}{\alpha} = \frac{Y}{r}`.
+:math:`\\cos\\overset{\\overline{}}{\\alpha} = \\frac{X}{r}` and mean sine
+will be :math:`\\sin\\overset{\\overline{}}{\\alpha} = \\frac{Y}{r}`.
 Finally, mean angle will be
 
 .. math:: \theta_{r} = \arctan\left( \frac{\sin\overset{\overline{}}{\alpha}}{\cos\overset{\overline{}}{\alpha}} \right)
